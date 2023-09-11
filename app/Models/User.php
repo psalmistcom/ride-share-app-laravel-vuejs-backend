@@ -35,6 +35,11 @@ class User extends Authenticatable
         'remember_token',
     ];
 
+    public function routeNotificationForTwilio()
+    {
+        return $this->phone;
+    }
+
     public function driver(): HasOne
     {
         return $this->hasOne(Drive::class);
