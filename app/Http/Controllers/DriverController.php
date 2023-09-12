@@ -19,7 +19,7 @@ class DriverController extends Controller
     public function update(Request $request)
     {
         $request->validate([
-            'year' => 'required|numeric|between:2010,2024',
+            'year' => 'required|numeric|between:2009,2024',
             'make' => 'required',
             'model' => 'required',
             'color' => 'required|alpha',
